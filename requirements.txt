@@ -9,8 +9,4 @@ geoip2
 flask_limiter
 user_agents
 flask_wtf
-<<<<<<< HEAD
-user-agents
-=======
-user-agents
->>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba
+
