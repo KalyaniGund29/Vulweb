@@ -363,25 +363,6 @@
             background-color: rgba(76, 201, 240, 0.05);
         }
         
-<<<<<<< HEAD
-=======
-        /* Risk Meter */
-        .risk-meter {
-            width: 100px;
-            height: 20px;
-            background-color: #eee;
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .risk-bar {
-            height: 100%;
-            border-radius: 10px;
-            transition: width 0.3s ease;
-        }
-        
->>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba
         /* Responsive */
         @media (max-width: 992px) {
             .container {
@@ -480,7 +461,6 @@
                     <div class="card-footer">Total registered users</div>
                 </div>
                 
-<<<<<<< HEAD
                 <div class="card animate__animated animate__fadeInUp animate__delay-1s">
                     <div class="card-header">
                         <h3 class="card-title">Active Sessions</h3>
@@ -492,8 +472,6 @@
                     <div class="card-footer">Currently logged in</div>
                 </div>
                 
-=======
->>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba
                 <div class="card animate__animated animate__fadeInUp animate__delay-2s">
                     <div class="card-header">
                         <h3 class="card-title">Recent Activities</h3>
@@ -520,7 +498,6 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
             <!-- Active Sessions -->
             <div class="section animate__animated animate__fadeIn">
                 <div class="section-header">
@@ -596,8 +573,6 @@
                 </div>
             </div>
 
-=======
->>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba
             <!-- User Activity Logs -->
             <div class="section animate__animated animate__fadeIn">
                 <div class="section-header">
@@ -624,7 +599,6 @@
                             <tr>
                                 <td>{{ activity.timestamp }}</td>
                                 <td>{{ activity.username }}</td>
-<<<<<<< HEAD
                                 <td>
                                     {% if activity.activity_type == 'login_success' %}
                                         <span class="badge badge-success">Login Success</span>
@@ -640,11 +614,6 @@
                                 </td>
                                 <td>{{ activity.ip }}</td>
                                 <td class="activity-details" title="{{ activity.details|tojson|safe }}">
-=======
-                                <td>{{ activity.activity_type }}</td>
-                                <td>{{ activity.client_info.ip }}</td>
-                                <td class="activity-details">
->>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba
                                     {% if activity.details %}
                                         {{ activity.details|tojson|safe|truncate(100) }}
                                     {% else %}
@@ -676,85 +645,6 @@
                     {% endfor %}
                 </div>
             </div>
-<<<<<<< HEAD
-=======
-
-            <!-- Active Sessions (now at the bottom) -->
-            <div class="section animate__animated animate__fadeIn">
-                <div class="section-header">
-                    <h2 class="section-title">Active Sessions</h2>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="refreshSessions()">
-                            <i class="fas fa-sync-alt"></i> Refresh
-                        </button>
-                    </div>
-                </div>
-                <div class="table-responsive">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User</th>
-                                <th>IP Address</th>
-                                <th>Device</th>
-                                <th>Last Activity</th>
-                                <th>Status</th>
-                                <th>Risk</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for session in sessions %}
-                            <tr>
-                                <td>
-                                    <strong>{{ session.username }}</strong><br>
-                                    <small class="text-muted">{{ session.token[:8] }}...{{ session.token[-8:] }}</small>
-                                </td>
-                                <td>{{ session.ip }}</td>
-                                <td>
-                                    {{ session.device.browser }} {{ session.device.version }} on {{ session.device.platform }}
-                                </td>
-                                <td>
-                                    {% if session.last_activity %}
-                                        {{ session.last_activity.strftime('%Y-%m-%d %H:%M:%S') }}<br>
-                                        <small>({{ session.inactive_minutes|round(1) }} min ago)</small>
-                                    {% else %}
-                                        Never
-                                    {% endif %}
-                                </td>
-                                <td>
-                                    {% if session.inactive_minutes and session.inactive_minutes > 30 %}
-                                        <span class="badge badge-warning">Inactive</span>
-                                    {% else %}
-                                        <span class="badge badge-success">Active</span>
-                                    {% endif %}
-                                </td>
-                                <td>
-                                    <div class="risk-meter">
-                                        <div class="risk-bar" style="width: {% if session.inactive_minutes and session.inactive_minutes > 30 %}70{% elif session.inactive_minutes and session.inactive_minutes > 15 %}40{% else %}20{% endif %}%; 
-                                            background-color: {% if session.inactive_minutes and session.inactive_minutes > 30 %}var(--danger-color){% elif session.inactive_minutes and session.inactive_minutes > 15 %}var(--warning-color){% else %}var(--success-color){% endif %};">
-                                        </div>
-                                        <span>{% if session.inactive_minutes and session.inactive_minutes > 30 %}High{% elif session.inactive_minutes and session.inactive_minutes > 15 %}Medium{% else %}Low{% endif %}</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    {% if session.username == current_user %}
-                                        <span class="badge badge-info">Current Session</span>
-                                    {% else %}
-                                        <a href="/admin/session_forensics/{{ session.token }}" class="btn btn-primary btn-sm" style="margin-right: 0.5rem;">
-                                            <i class="fas fa-search"></i> Investigate
-                                        </a>
-                                        <button class="btn btn-danger btn-sm" onclick="terminateSession('{{ session.token }}')">
-                                            <i class="fas fa-power-off"></i> Terminate
-                                        </button>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
->>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba
         </main>
     </div>
 
