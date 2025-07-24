@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Superuser Activity Monitor</title>
+    <style>
+        .log-entry {
+            padding: 10px;
+            margin: 5px;
+            background: #f8f8f8;
+            border-left: 4px solid #f00;
+        }
+        .critical {
+            background: #ffecec;
+            border-left-color: #c00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Superuser Activity Monitor</h1>
+    <div id="logs">
+        {% for activity in activities %}
+        <div class="log-entry {% if 'POSSIBLE SQL INJECTION' in activity %}critical{% endif %}">
+            {{ activity }}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

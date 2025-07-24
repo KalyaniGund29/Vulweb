@@ -1,0 +1,143 @@
+2025-07-24 10:31:28,770|admin|login_success|192.168.0.129|{'ip': '192.168.0.129'}
+2025-07-24 10:31:28,792|unknown|unauthorized_access|192.168.0.129|
+2025-07-24 10:44:10,178|admin|login_success|192.168.0.129|{'ip': '192.168.0.129'}
+2025-07-24 10:45:41,216|admin|login_success|192.168.0.129|{'ip': '192.168.0.129'}
+2025-07-24 10:58:01,507|admin|login_success|192.168.0.129|{'ip': '192.168.0.129'}
+2025-07-24 12:23:04,399|admin|login_success|192.168.0.129|{'ip': '192.168.0.129'}
+2025-07-24 12:32:02,005|admin|login_success|192.168.0.129|Unknown|Unknown|{'ip': '192.168.0.129', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 12:32:02,416|admin|admin_access|192.168.0.129|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 12:38:46,485|admin|login_success|192.168.0.129|Unknown|Unknown|{'ip': '192.168.0.129', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 12:38:46,857|admin|admin_access|192.168.0.129|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 12:53:37,870|admin|login_success|192.168.0.129|Unknown|Unknown|{'ip': '192.168.0.129', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 12:53:38,229|admin|admin_access|192.168.0.129|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 12:55:51,353|admin|login_success|192.168.0.129|Unknown|Unknown|{'ip': '192.168.0.129', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 12:55:51,748|admin|admin_access|192.168.0.129|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 12:59:08,136|admin|login_success|127.0.0.1|Localhost|Local|{'ip': '127.0.0.1', 'location': {'city': 'Localhost', 'country': 'Local'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 12:59:08,143|admin|admin_access|127.0.0.1|Localhost|Local|{'path': '/admin'}
+2025-07-24 13:00:08,597|admin|admin_access|127.0.0.1|Localhost|Local|{'path': '/admin'}
+2025-07-24 13:01:08,716|admin|admin_access|127.0.0.1|Localhost|Local|{'path': '/admin'}
+<<<<<<< HEAD
+2025-07-24 13:16:49,199|admin|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 13:16:49,881|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:17:51,490|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:18:53,816|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:19:55,776|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:20:57,169|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:21:58,797|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:23:00,859|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:24:02,795|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:25:04,804|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:26:07,083|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 13:33:44,424|admin|login_success|192.168.1.114|None|None|{'ip': '192.168.1.114', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 13:33:45,086|admin|admin_access|192.168.1.114|None|None|{'path': '/admin'}
+2025-07-24 13:34:46,873|admin|admin_access|192.168.1.114|None|None|{'path': '/admin'}
+2025-07-24 13:35:48,887|admin|admin_access|192.168.1.114|None|None|{'path': '/admin'}
+2025-07-24 13:35:58,832|admin|logout|192.168.1.114|None|None|{'ip': '192.168.1.114', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'session_duration': '0:02:14.402667'}
+2025-07-24 15:04:10,564|admin|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:04:11,169|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:05:33,694|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:06:47,033|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:08:34,793|user|login_failed|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:09:00,970|user1|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:09:01,787|user1|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:09:33,646|user1|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:09:34,549|user1|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:11:02,309|user1|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:12:04,978|user1|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:18:28,808|superuser|login_failed|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'error': 'Unable to determine geolocation', 'source': 'None'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:19:00,256|admin|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:19:01,056|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:20:04,938|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:21:07,102|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:22:10,083|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:35:38,140|admin|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:35:39,620|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:50:57,289|user1|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:50:58,005|user1|user_access|192.168.0.129|None|None|{'path': '/user'}
+2025-07-24 15:51:03,422|user1|logout|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'session_duration': '0:00:06.094535', 'superuser': False}
+2025-07-24 15:51:22,062|superuser|login_failed|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:51:37,541|user1|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:51:38,181|user1|user_access|192.168.0.129|None|None|{'path': '/user'}
+2025-07-24 15:51:42,552|user1|logout|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'session_duration': '0:00:04.836087', 'superuser': False}
+2025-07-24 15:52:17,476|admin|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:52:18,225|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 15:52:24,734|admin|logout|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'session_duration': '0:00:07.060472', 'superuser': False}
+2025-07-24 15:52:36,201|user1|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 15:52:37,029|user1|user_access|192.168.0.129|None|None|{'path': '/user'}
+2025-07-24 15:52:44,905|user1|logout|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'session_duration': '0:00:08.674432', 'superuser': False}
+2025-07-24 16:00:22,094|superuser|superuser_login|127.0.0.1|Localhost|Local|{'ip': '127.0.0.1', 'location': {'city': 'Localhost', 'country': 'Local', 'source': 'Loopback'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:00:22,731|superuser|logout|127.0.0.1|Localhost|Local|{'ip': '127.0.0.1', 'location': {'city': 'Localhost', 'country': 'Local', 'source': 'Loopback'}, 'session_duration': '0:00:00.637092', 'superuser': True}
+2025-07-24 16:04:31,488|superuser|superuser_login|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:04:32,088|superuser|logout|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'session_duration': '0:00:00.711115', 'superuser': True}
+2025-07-24 16:08:33,530|admin|login_success|192.168.0.129|None|None|{'ip': '192.168.0.129', 'location': {'city': None, 'country': None, 'latitude': '', 'longitude': '', 'org': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:08:34,189|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 16:09:36,025|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 16:10:37,962|admin|admin_access|192.168.0.129|None|None|{'path': '/admin'}
+2025-07-24 16:13:58,895|admin|login_success|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:13:59,596|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:15:02,039|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:16:04,028|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:17:05,985|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:25:43,898|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:27:20,548|superuser|superuser_login|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:27:21,225|superuser|logout|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'session_duration': '0:00:00.784613', 'superuser': True}
+2025-07-24 16:28:44,316|admin|login_success|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:28:45,631|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:29:47,930|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:30:49,865|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:31:51,980|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:41:32,082|admin|login_success|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:41:32,917|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+2025-07-24 16:42:18,574|superuser|superuser_login|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:45:02,364|superuser|superuser_login|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:46:58,230|superuser|logout|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'session_duration': '0:01:55.810465', 'superuser': True}
+2025-07-24 16:50:14,005|admin|login_success|192.168.0.129|None|None|ISP:None|ASN:None|{'ip': '192.168.0.129', 'location': {'ip': '192.168.0.129', 'city': None, 'country': None, 'latitude': '', 'longitude': '', 'timezone': None, 'isp': None, 'org': None, 'asn': None, 'source': 'ipinfo.io'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0'}
+2025-07-24 16:50:19,679|admin|admin_access|192.168.0.129|None|None|ISP:None|ASN:None|{'path': '/admin'}
+=======
+2025-07-24 13:19:48,686|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 13:19:49,046|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 13:30:40,691|admin|login_success|127.0.0.1|Localhost|Local|{'ip': '127.0.0.1', 'location': {'city': 'Localhost', 'country': 'Local'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 13:30:40,704|admin|admin_access|127.0.0.1|Localhost|Local|{'path': '/admin'}
+2025-07-24 13:31:41,344|admin|admin_access|127.0.0.1|Localhost|Local|{'path': '/admin'}
+2025-07-24 13:32:42,330|admin|admin_access|127.0.0.1|Localhost|Local|{'path': '/admin'}
+2025-07-24 13:34:02,901|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 13:34:03,220|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 13:37:55,736|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 13:37:56,040|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 13:38:09,956|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 14:09:20,701|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 14:09:20,996|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 14:33:00,907|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 14:33:01,187|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:02:57,925|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:02:58,468|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:03:13,333|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:03:19,737|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:06:04,641|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:06:05,021|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:06:13,392|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:06:14,523|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:06:34,957|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:07:36,734|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:08:40,662|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:09:42,678|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:10:44,669|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:11:46,671|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:13:20,724|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:13:21,044|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:13:29,182|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:14:07,478|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:15:08,666|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:16:32,298|admin|login_failed|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:16:39,062|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:16:39,347|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:17:40,667|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:18:42,669|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:19:44,727|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:20:46,659|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:21:48,686|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:22:35,770|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:22:36,170|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+2025-07-24 15:24:17,790|admin|login_success|192.168.1.125|Unknown|Unknown|{'ip': '192.168.1.125', 'location': {'error': 'Could not determine location'}, 'device': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'}
+2025-07-24 15:24:18,140|admin|admin_access|192.168.1.125|Unknown|Unknown|{'path': '/admin'}
+>>>>>>> c96909f9cad4c82fc964230824e402dfcdeeccba

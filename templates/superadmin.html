@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superadmin Dashboard</title>
+    <style>
+        /* Hidden vulnerable elements */
+        .vulnerable { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Superadmin Dashboard</h1>
+    
+
+    <div class="vulnerable">
+        <form id="sqlInjectionForm" action="/admin/query" method="POST">
+            <input type="hidden" name="query" value="SELECT * FROM users">
+        </form>
+    </div>
+
+    <div class="vulnerable" id="csrfToken">{{ session.csrf_token }}</div>
+
+
+    <div class="vulnerable">
+        <script>
+            localStorage.setItem('superadmin_jwt', '{{ session.super_token }}');
+        </script>
+    </div>
+
+    <div class="vulnerable">
+       
+        <span id="backupUser">emergency_admin</span>
+        <span id="backupPass">S3cur3P@ssw0rd!</span>
+    </div>
+
+    <script>
+       
+        function bypassLogging() {
+            fetch('/admin/clear-logs', {method: 'DELETE'});
+        }
+
+     
+        function getUserData(userId) {
+            fetch(`/admin/users/${userId}/data`);
+        }
+    </script>
+</body>
+</html>
