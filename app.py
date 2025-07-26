@@ -11,8 +11,12 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 import requests  # For IP geolocation fallback
 from user_agents import parse
+import sys
+import flask
 
-
+# Add this to your setup code (before routes)
+# Create uploads directory
+os.makedirs('uploads', exist_ok=True)
 # === Setup Flask ===
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)
@@ -353,6 +357,9 @@ def read_traceback_logs(limit=50):
         pass
     return tracebacks[-limit:][::-1]
 
+
+
+
 # === LOGIN ===
 # === LOGIN ROUTES ===
 # === LOGIN ROUTES ===
@@ -661,6 +668,106 @@ def logout():
     resp = make_response(redirect('/super' if is_superuser else '/'))
     resp.delete_cookie('session')
     return resp
+
+# === Add these vulnerable routes ===
+
+# 1. Reflected XSS Vulnerability
+@app.route('/search')
+def search():
+    query = request.args.get('q', '')
+    # Intentionally vulnerable - reflects user input without sanitization
+    return f"<h1>Search Results</h1><p>You searched for: {query}</p>"
+
+# 2. Basic SQL Injection Vulnerability
+@app.route('/userinfo')
+def user_info():
+    username = request.args.get('username', '')
+    # Intentionally vulnerable SQL concatenation
+    fake_db_query = f"SELECT * FROM users WHERE username = '{username}'"
+    return f"Executing query: {fake_db_query}"
+
+# 3. Path Traversal Vulnerability
+@app.route('/readfile')
+def read_file():
+    filename = request.args.get('file', '')
+    # Intentionally vulnerable file path handling
+    try:
+        with open(filename, 'r') as f:
+            return f.read()
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+# 4. Hardcoded Credentials
+@app.route('/debug')
+def debug_info():
+    # Intentionally exposed debug credentials
+    debug_users = {
+        'debug_admin': {'password': 'debug_pass123'},
+        'tester': {'password': 'test1234'}
+    }
+    return json.dumps(debug_users)
+
+# 5. Insecure Direct Object Reference (IDOR)
+@app.route('/profile')
+def user_profile():
+    user_id = request.args.get('id', '1')
+    # Intentionally no access control check
+    return f"Displaying profile for user ID: {user_id}"
+
+# 6. CSRF Vulnerability (no protection)
+@app.route('/change_email', methods=['POST'])
+def change_email():
+    if 'email' in request.form:
+        # Intentionally no CSRF protection
+        return f"Email changed to: {request.form['email']}"
+    return "No email provided"
+
+# 7. Information Disclosure
+@app.route('/serverinfo')
+def server_info():
+    # Intentionally exposes server information
+    return {
+        'python_version': sys.version,
+        'flask_version': flask.__version__,
+        'server_time': datetime.now().isoformat(),
+        'environment': dict(os.environ)
+    }
+
+# 8. Weak Password Reset
+@app.route('/reset_password', methods=['POST'])
+def reset_password():
+    username = request.form.get('username')
+    # Intentionally weak security questions
+    if username in users:
+        return f"Password reset initiated for {username}. Security question: What's your favorite color?"
+    return "User not found"
+
+# 9. Session Fixation
+@app.route('/setsession')
+def set_session():
+    session_id = request.args.get('session_id')
+    if session_id:
+        # Intentionally vulnerable to session fixation
+        resp = make_response("Session ID set")
+        resp.set_cookie('session', session_id)
+        return resp
+    return "No session ID provided"
+
+# 10. Unrestricted File Upload
+@app.route('/upload', methods=['POST'])
+def upload_file():
+    if 'file' not in request.files:
+        return "No file uploaded"
+    
+    file = request.files['file']
+    if file.filename == '':
+        return "No selected file"
+    
+    if file:
+        # Intentionally no file validation
+        filename = file.filename
+        file.save(os.path.join('uploads', filename))
+        return f"File {filename} uploaded successfully"
 
 # === START SERVER ===
 if __name__ == '__main__':
