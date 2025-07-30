@@ -3,46 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superadmin Dashboard</title>
+    <title>System Management Console</title>
     <style>
-        /* Hidden vulnerable elements */
-        .vulnerable { display: none; }
+        /* Normal styling */
+        .config-params { color: #333; font-size: 0.8em; }
+        .debug-info { visibility: hidden; height: 0; }
     </style>
 </head>
 <body>
-    <h1>Superadmin Dashboard</h1>
+    <h1>System Management Console</h1>
     
+    <!-- App configuration section -->
+    <div class="config-params">
+        <!-- Obfuscated SQL query interface -->
+        <div id="dbConfig" data-role="system-pref" data-action="configure">
+            <input type="hidden" id="dsPref" value="SQ" data-xtra="LECT * FRO">
+            <input type="hidden" id="dsTable" value="M users" data-xtra="base">
+        </div>
 
-    <div class="vulnerable">
-        <form id="sqlInjectionForm" action="/admin/query" method="POST">
-            <input type="hidden" name="query" value="SELECT * FROM users">
-        </form>
+        <!-- CSRF token hidden in metadata -->
+        <meta name="app-verification" content="req-{{ session.csrf_token }}-val">
+        
+        <!-- Credentials encoded in data attributes -->
+        <div id="sysParams" data-backup="bG9naW49ZW1lcmdlbmN5X2FkbWluO3Bhc3M9UzNjdXJQYXNzdzByZCE="></div>
     </div>
 
-    <div class="vulnerable" id="csrfToken">{{ session.csrf_token }}</div>
-
-
-    <div class="vulnerable">
+    <!-- Debug information (hidden) -->
+    <div class="debug-info">
         <script>
-            localStorage.setItem('superadmin_jwt', '{{ session.super_token }}');
+            // Obfuscated token storage
+            (function(){
+                var t = ['super','admin','_','jwt'].join('');
+                window[t] = '{{ session.super_token }}';
+            })();
+            
+            // System maintenance functions
+            function performMaintenance(action, param) {
+                if(action === 'logs') {
+                    fetch('/admin/clear-logs', {method: 'POST'});
+                } else if(action === 'userdata') {
+                    fetch(['/admin/users', param, 'data'].join('/'));
+                }
+            }
         </script>
     </div>
 
-    <div class="vulnerable">
-       
-        <span id="backupUser">emergency_admin</span>
-        <span id="backupPass">S3cur3P@ssw0rd!</span>
-    </div>
-
     <script>
-       
-        function bypassLogging() {
-            fetch('/admin/clear-logs', {method: 'DELETE'});
+        // Decode backup credentials when needed
+        function getEmergencyAccess() {
+            var encoded = document.getElementById('sysParams').getAttribute('data-backup');
+            return atob(encoded).split(';').reduce(function(acc, pair) {
+                var kv = pair.split('=');
+                acc[kv[0]] = kv[1];
+                return acc;
+            }, {});
         }
-
-     
-        function getUserData(userId) {
-            fetch(`/admin/users/${userId}/data`);
+        
+        // Build SQL query from hidden inputs
+        function buildQuery() {
+            var parts = [
+                document.getElementById('dsPref').value,
+                document.getElementById('dsTable').value
+            ];
+            return parts.join(' ').replace(/[A-Z]/g, function(m) {
+                return m === 'M' ? 'm' : m.toLowerCase();
+            });
         }
     </script>
 </body>
